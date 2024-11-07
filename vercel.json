@@ -1,7 +1,15 @@
 {
     "builds": [
       {
-        "src": "dist/**/*",
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "assets/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "img/**/*",
         "use": "@vercel/static"
       }
     ]
